@@ -7,18 +7,31 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active">About</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active">{{'About' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/skill" routerLinkActive="active">Skills</a>
+          <a class="nav-link" routerLink="/skill" routerLinkActive="active">{{'Skills' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/reference" routerLinkActive="active">References</a>
+          <a class="nav-link" routerLink="/reference" routerLinkActive="active">{{'References' | translate }}</a>
         </li>
       </ul>
       <div class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+       <!--  Language switch -->
+       <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage">
+        <ng-template pTemplate="selectedItem">
+          <div class="flex align-items-center gap-2" *ngIf="selectedLanguage">
+            <img [src]="'./assets/images/languages/' + selectedLanguage.code + '.png'" style="width: 20px"/>
+            <span class="mx-2">{{ selectedLanguage.name | translate }}</span>
+          </div>
+      </ng-template>
+        <ng-template let-language pTemplate="item">
+            <div class="flex align-items-start text-start" (click)="switchLang(language.code)">
+                <img [src]="'./assets/images/languages/' + language.code + '.png'" style="width: 20px" />
+                <span class="mx-2">{{ language.name | translate }}</span>
+            </div>
+        </ng-template>
+    </p-dropdown>
       </div>
     </div>
   </div>

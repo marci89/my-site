@@ -1,7 +1,20 @@
 {
   "Hungarian": "Hungarian",
   "English": "English",
+  "Home": "Home",
   "About": "About",
   "Skills": "Skills",
-  "References": "References"
+  "References": "References",
+  "Education-Works": "Education/works",
+  "ContactMe": "Contact me",
+
+  "CVDownload": "Download CV",
+  "Download": "Download",
+
+  "AboutModule": {
+    "Welcome": "Hi! I am József Kismarczi, ",
+    "CallMeMarci": "but you can call me Marci",
+    "Experiences": "I am a full-stack developer - Angular & C#",
+    "Description": "My name is József Kismarczi and I have been involved in active development since 2018. My skills include the implementation of web design and development principles to create reliable software both on the backend and front-end. I bring mockups to life using a variety of tools, such as HTML5, CSS3, SCSS, JavaScript (ES6), TypeScript, jQuery and Angular. I am able to communicate technical issues clearly and comprehensibly to the development team. I create responsive and user-friendly products and applications, then monitor their performance and solve problems. I use version control tools like Git to maintain an organized workflow. I Also I have experience in using the .net framework. On the back-end, I also try to comply with SOLID principles, clean code rules and using design patterns to create a WEB API with better performance and more transparent code."
+  }
 }

@@ -16,6 +16,9 @@ import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { HomeComponent } from './components/home/home.component';
 
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,7 +31,10 @@ export function httpTranslateLoader(http: HttpClient) {
     HeaderComponent,
     SkillComponent,
     CvComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    ContactComponent,
+    ExperienceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

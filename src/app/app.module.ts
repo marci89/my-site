@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { CvComponent } from './components/cv/cv.component';
 import { ReferenceComponent } from './components/reference/reference.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { HomeComponent } from './components/home/home.component';
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -16,9 +19,7 @@ import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
-import { ContactComponent } from './components/contact/contact.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { HomeComponent } from './components/home/home.component';
+import { TimelineModule } from 'primeng/timeline';
 
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -43,6 +44,7 @@ export function httpTranslateLoader(http: HttpClient) {
     HttpClientModule,
     FormsModule,
     DropdownModule,
+    TimelineModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

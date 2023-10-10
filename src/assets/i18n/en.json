@@ -20,5 +20,15 @@
 
   "GetInTouch": "Get in touch with me",
   "EmailMe": "Send email",
-  "MyLocation": "Szeged, Hungary"
+  "MyLocation": "Szeged, Hungary",
+
+  "Workplaces": "Workplaces",
+  "ActualJob": "Signal Iduna | 2022 - Now",
+  "FullStackDeveloper": "Full stack developer",
+  "FrontEndDeveloper": "Fornt-end developer",
+  "SignalIdunaDescription": "Maintenance of insurance programs",
+  "NewlineDescription": "Developing public trasport schedule system websites",
+  "Education": "Education",
+  "EducationDescription" : "I have always been interested in programming, so I did a practical five-month course at Flow academy to learn programming. before that I learned to program on my own.",
+  "UdemyCourses": "Udemy courses"
 }

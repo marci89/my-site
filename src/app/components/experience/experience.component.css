@@ -1,0 +1,16 @@
+
+.udemy-card{
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(19, 189, 76);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

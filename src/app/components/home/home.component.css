@@ -1,0 +1,28 @@
+
+
+canvas {
+  display: block;
+}
+
+.centered-text {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-animation {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: aliceblue;
+}

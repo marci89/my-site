@@ -13,7 +13,7 @@
   "Download": "Letöltés",
 
   "AboutModule": {
-    "Welcome": "Szia! A nevem Kismarczi József, ",
+    "Welcome": "Szia! A nevem Kismarczi József",
     "CallMeMarci": "de hívhatsz Marcinak",
     "Experiences": "Full-stack fejelsztő vagyok - Angular & C#",
     "Description": "Kismarczi József vagyok és 2018 óta foglalkozok aktívan fejlesztéssel.Képességem kiterjed a webtervezési és -fejlesztési elvek megvalósítására, hogy megbízható szoftvereket hozzak létre mind backend mind front-end oldalon. A maketteket számos eszköz segítségével keltem életre, mint például a HTML5, CSS3, SCSS, JavaScript (ES6), TypeScript, jQuery és Angular. Képes vagyok a technikai kérdések világos és érthető kommunikálásában a fejlesztői csapat felé. Reszponzív és felhasználóbarát webhelyeket és alkalmazásokat készítek, miközben figyelemmel kísérem a teljesítményüket és megoldom a problémákat. A szervezett munkafolyamat fenntartásához olyan verziókezelő eszközöket használok, mint a Git. Ezenkívül tapasztalattal rendelkezem a .net framework használatában is. Back-end-en is igyekszem betartani a SOLID elveket, clean code szabályokat és a design pattern-ek segítségével jobb teljesítménnyel és átláthatóbb kóddal létrehozni egy WEB API-t."

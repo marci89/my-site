@@ -35,7 +35,7 @@ export function httpTranslateLoader(http: HttpClient) {
     ReferenceComponent,
     ContactComponent,
     ExperienceComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.reference-card{
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(19, 189, 76);
+}

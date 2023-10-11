@@ -1,1 +1,17 @@
-<p>reference works!</p>
+<div class="text-center mt-3 mb-5">
+  <h1>{{ 'References' | translate }}</h1>
+</div>
+<div class="conatiner">
+  <div class="row col-10 mt-5 mx-auto">
+    <div *ngFor="let reference of references" class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
+
+      <div class="text-center mb-2">
+        <p>{{reference.title}}</p>
+      </div>
+
+      <a href={{reference.url}} target="_blank">
+        <img class="reference-card" [src]="reference.image" alt="english-helper" />
+      </a>
+    </div>
+  </div>
+</div>

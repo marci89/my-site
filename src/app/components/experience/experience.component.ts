@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Company, Udemy } from 'src/app/Interfaces/education-works.interface';
 
-
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -11,9 +10,12 @@ export class ExperienceComponent implements OnInit {
   companies: Company[];
   udemycourses: Udemy[];
 
-  constructor() {
-  }
   ngOnInit(): void {
+    this.listCompanies();
+    this.listUdemycourses();
+  }
+
+  listCompanies() {
     this.companies = [
       { company: 'ActualJob', role: 'FullStackDeveloper', description: 'SignalIdunaDescription', stacks: 'Stacks: C#, Angular' },
       {
@@ -22,7 +24,9 @@ export class ExperienceComponent implements OnInit {
       },
       { company: 'Pc Trade Systems kft. | Jun 2018 - Dec 2018', role: 'FrontEndDeveloper', stacks: 'Angular, Scrum, Jira ticket management' }
     ];
+  }
 
+  listUdemycourses() {
     this.udemycourses = [
       {
         title: 'Build an app with ASPNET Core and Angular from scratch',

@@ -5,11 +5,11 @@ p {
 }
 
 .front-end {
-  color: blue;
+  color: red;
 }
 
 .back-end {
-  color: brown;
+  color: rebeccapurple;
 }
 
 .language-icon{
@@ -30,10 +30,11 @@ img {
 }
 
 img:first-child {
-  border-bottom: 3px solid rgb(30, 223, 207); ;
+  border-bottom: 3px solid #2ab367;
 }
 
 .centered-content {
+  background-color: rgb(54, 50, 50);
   padding: 3px;
   border-radius: 6%;
   position: absolute;
@@ -42,8 +43,20 @@ img:first-child {
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.8);
+  background:  rgb(54, 50, 50, 0.8);
 
+}
+
+.white-neon-text{
+  text-shadow:
+  0 0 0px #b8bdb8,
+  0 0 1px #b8bdb8,
+  0 0 2px #b8bdb8,
+  0 0 1px #c3d4cb,
+  0 0 3px #c3d4cb,
+  0 0 4px #c3d4cb,
+  0 0 2px #c3d4cb,
+  0 0 2px #c3d4cb;
 }
 
 @media (max-width: 767px) {

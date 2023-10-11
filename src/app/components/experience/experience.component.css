@@ -1,9 +1,11 @@
-
-.udemy-card{
-  width: 80%;
-  background-color: black;
-  color: white;
+.work-card{
+  width: 100%;
   border: 2px solid rgb(19, 189, 76);
+}
+.work-card:hover{
+  width: 100%;
+  border: 2px solid rgb(19, 189, 76);
+  text-shadow: none;
 }
 
 p {

@@ -1,0 +1,33 @@
+.nav-link {
+  color:white;
+  font-size: large;
+}
+
+
+.nav-link:hover, .nav-link.active{
+  color:white;
+  text-shadow:
+  0 0 0px #28ee39,
+  0 0 1px #28ee39,
+  0 0 10px #28ee39,
+  0 0 15px #2ab367,
+  0 0 16px #2ab367,
+  0 0 9px #2ab367,
+  0 0 2px #2ab367,
+  0 0 7px #2ab367;
+}
+
+.home-icon:hover, .home-icon.active{
+  color:white;
+  text-shadow:
+  0 0 0px #28ee39,
+  0 0 1px #28ee39,
+  0 0 10px #28ee39,
+  0 0 15px #2ab367,
+  0 0 16px #2ab367,
+  0 0 9px #2ab367,
+  0 0 2px #2ab367,
+  0 0 7px #2ab367;
+}
+
+

@@ -1,3 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+
+body {
+  background-color: black;
+}
+
+/* Remove focus*/
+.p-focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.card {
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(19, 189, 76);
+}
+
+.card:hover {
+  width: 80%;
+  background-color: black;
+  color: white;
+  text-shadow:
+    0 0 0px #28ee39,
+    0 0 1px #28ee39,
+    0 0 2px #28ee39,
+    0 0 6px #2ab367,
+    0 0 4px #2ab367,
+    0 0 10px #2ab367,
+    0 0 2px #2ab367,
+    0 0 12px #2ab367;
+  border: 2px solid rgb(180, 184, 181);
+}
+
+
+p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+hr {
+  border: 1px solid white;
+  color: white;
+  opacity: 1;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}

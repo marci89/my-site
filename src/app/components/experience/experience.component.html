@@ -4,14 +4,15 @@
 <p-timeline [value]="companies" align="alternate" [styleClass]="'customized-timeline'">
   <ng-template pTemplate="marker" let-event>
     <span class="custom-marker shadow-2">
-      <i class="fa fa-circle fa-2x"></i>
+      <i class="fa fa-circle fa-lg" style="color:white"></i>
     </span>
   </ng-template>
   <ng-template pTemplate="content" let-event>
-    <div class="card">
+    <div class="card work-card">
       <div class="card-body">
         <h4>{{event.company | translate}}</h4>
         <h6>{{event.role | translate}}</h6>
+        <hr>
         <p *ngIf="event.description"> {{event.description | translate}}</p>
         <p *ngIf="event.stacks"> {{event.stacks | translate}}</p>
       </div>
@@ -32,7 +33,7 @@
 <div class="conatiner">
   <div class="row col-10 mt-5 mx-auto">
     <div *ngFor="let udemy of udemycourses" class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
-      <div class="card udemy-card">
+      <div class="card">
         <div class="card-body">
           <p><a href={{udemy.url}} target="_blank">{{udemy.title}}</a></p>
         </div>

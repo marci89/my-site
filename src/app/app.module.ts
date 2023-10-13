@@ -21,9 +21,10 @@ import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { TimelineModule } from 'primeng/timeline';
 
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
+
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ export function httpTranslateLoader(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
-          useFactory: httpTranslateLoader,
+          useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
   })

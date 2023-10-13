@@ -1,18 +1,15 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Language } from '../Interfaces/language.interface';
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class LanguageService implements OnInit {
+export class LanguageService {
   private languages: Language[] = [];
   private selectedLanguage: Language | undefined;
 
   constructor(private translate: TranslateService) { }
-
-  ngOnInit() {
-  }
 
   // init language things
   initialize() {

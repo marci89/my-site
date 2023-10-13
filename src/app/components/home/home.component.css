@@ -1,5 +1,11 @@
 
 
+.home-container {
+  height: 90vh;
+  min-height: 728px;
+  position: relative;
+}
+
 canvas {
   display: block;
 }

@@ -1,5 +1,3 @@
-
-
 p {
   margin: 0;
 }
@@ -21,6 +19,7 @@ p {
 
 .image-container {
   height: 90vh;
+  min-height: 728px;
   position: relative;
 }
 

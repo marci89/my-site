@@ -3,43 +3,47 @@
     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
       <img [src]="'./assets/images/me.jpg'" class="me-img mx-auto mb-5" />
 
+      <a href="tel:+36302075454" class="data-link">
         <p> <i class="fa fa-phone fa-lg mx-2"></i> +36 30 207 5454</p>
+      </a>
 
-        <a href="mailto:kismarczirobi@gmail.com@?subject=feedback">
-          <p><i class="fa fa-envelope fa-lg mx-2"></i>kismarczirobi@gmail.com</p>
+      <a href="mailto:kismarczirobi@gmail.com@?subject=feedback" class="data-link">
+        <p><i class="fa fa-envelope fa-lg mx-2"></i>kismarczirobi@gmail.com</p>
+      </a>
+
+      <p>
+        <a href="https://github.com/marci89" class="data-link" target="_blank">
+          <i class="fa fa-github fa-lg" style="color: white;"></i>
+          Github
         </a>
+      </p>
 
-        <p>
-          <a href="https://github.com/marci89" target="_blank">
-            <i class="fa fa-github fa-lg" style="color: white;"></i>
-            Github
-          </a>
-        </p>
-
-        <p>
-          <a href="https://www.linkedin.com/in/jozsef-kismarczi/" target="_blank">
-            <i class="fa fa-linkedin fa- fa-lg mx-2" style="color:white; background-color: gray; padding: 5px;"></i>
-            Linkedin
-          </a>
-        </p>
-
-        <a href={{locationUrl}} target="_blank">
-          <p><i class="fa fa-map-marker fa-lg mx-2"></i>{{ 'MyLocation' | translate }}</p>
+      <p>
+        <a href="https://www.linkedin.com/in/jozsef-kismarczi/" class="data-link" target="_blank">
+          <i class="fa fa-linkedin fa- fa-lg mx-2" style="color:white; background-color: gray; padding: 5px;"></i>
+          Linkedin
         </a>
+      </p>
+
+      <a href={{locationUrl}} class="data-link" target="_blank">
+        <p><i class="fa fa-map-marker fa-lg mx-2"></i>{{ 'MyLocation' | translate }}</p>
+      </a>
 
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h2>{{ 'AboutModule.Welcome' | translate }},</h2>
-      <h2>{{ 'AboutModule.CallMeMarci' | translate }}</h2>
+      <h2>{{ 'AboutModule.Welcome' | translate }} <span class="name">{{ 'AboutModule.MyName' | translate }}</span>,</h2>
+      <h2>{{ 'AboutModule.CallMeMarci' | translate }} <span class="name">{{ 'AboutModule.NickName' | translate }}</span>
+      </h2>
       <p class="experience">{{ 'AboutModule.Experiences' | translate }}</p>
-      <p>{{ 'AboutModule.Description' | translate }}</p>
+      <p style="text-align: justify;">{{ 'AboutModule.Description' | translate }}</p>
 
     </div>
   </div>
   <div class="row mt-3 mb-3">
     <div class="col-12 d-flex justify-content-center text-center">
       <button routerLink="/contact" class="btn btn-success glow-on-hover">{{ 'ContactMe' | translate }}</button>
-      <button routerLink="/cv" target="_blank" class="btn btn-success mx-4 glow-on-hover">{{ 'CVDownload' | translate }}</button>
+      <button routerLink="/cv" target="_blank" class="btn btn-success mx-4 glow-on-hover">{{ 'CVDownload' | translate
+        }}</button>
     </div>
   </div>
 </div>

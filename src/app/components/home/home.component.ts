@@ -9,7 +9,7 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/co
 export class HomeComponent implements OnInit {
   @ViewChild('canvas', { static: true }) canvas: ElementRef<HTMLCanvasElement>;
 
-  question : string = "";
+  question: string = "";
   text: any = "Do you ever get the feeling monitored online?";
   currentIndex: number = 0;
 
@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit {
     this.animateText();
     this.ctx = this.canvas.nativeElement.getContext('2d');
     this.canvas.nativeElement.width = window.innerWidth - 20;
-    this.canvas.nativeElement.height = window.innerHeight - 100;
+    this.canvas.nativeElement.height = window.innerHeight - 77;
+
 
     this.lettersArray = this.letters.split('');
     this.columns = this.canvas.nativeElement.width / this.fontSize;
@@ -57,7 +58,7 @@ export class HomeComponent implements OnInit {
     const textElement = document.querySelector('.text-animation');
     setInterval(() => {
       if (this.currentIndex < this.text.length) {
-        this.question +=this.text[this.currentIndex];
+        this.question += this.text[this.currentIndex];
         this.currentIndex++;
       }
     }, 200);

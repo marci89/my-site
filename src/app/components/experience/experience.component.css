@@ -1,18 +1,17 @@
-.work-card{
-  width: 100%;
-  border: 2px solid rgb(19, 189, 76);
-}
-.work-card:hover{
-  width: 100%;
-  border: 2px solid rgb(19, 189, 76);
-  text-shadow: none;
-}
+ .work-card {
+   width: 100%;
+ }
 
-p {
-  margin: 0;
-}
+ .work-card:hover {
+   width: 100%;
+   text-shadow: none;
+ }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+ p {
+   margin: 0;
+ }
+
+ a {
+   text-decoration: none;
+   color: white;
+ }

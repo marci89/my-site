@@ -18,11 +18,11 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
   // Wildcard route for unmatched URLs
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

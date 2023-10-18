@@ -18,7 +18,7 @@ export class ReferenceComponent implements OnInit{
     this.references = [
       {
         title: 'English Helper',
-        url: '#',
+        url: 'https://www.kismarczi.hu/english-helper/',
         image: 'assets/images/references/english-helper.png'
       }
     ]

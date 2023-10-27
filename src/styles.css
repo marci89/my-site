@@ -2,6 +2,9 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
+/*import cat.css*/
+@import './app/css/cat.css';
+
 body {
   background-color: black;
 }
@@ -69,8 +72,8 @@ hr {
 
 /* animated button hover */
 .glow-on-hover {
-  width: 220px;
-  height: 50px;
+  width: 230px;
+  height: 60px;
   outline: none;
   color: #fff;
   background: #111;
@@ -103,7 +106,7 @@ hr {
 }
 
 .glow-on-hover:active:after {
-  background: transparent;
+  background: black;
 }
 
 .glow-on-hover:hover:before {
@@ -175,7 +178,7 @@ hr {
 }
 
 .glow-on-card-hover:active:after {
-  background: transparent;
+  background: black;
 }
 
 .glow-on-card-hover:hover:before {

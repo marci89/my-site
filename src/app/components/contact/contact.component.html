@@ -2,10 +2,11 @@
   <h1>{{ 'GetInTouch' | translate }}</h1>
 </div>
 
+
 <div class="container">
   <div class="row mt-5">
     <div class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
-      <div class="card">
+      <div class="card  mx-auto">
         <div class="card-body glow-on-card-hover">
           <i class="fa fa-phone fa-3x"></i>
           <p>+36 30 207 5454</p>
@@ -14,7 +15,7 @@
     </div>
     <div class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
       <a href={{mailUrl}}>
-        <div class="card">
+        <div class="card mx-auto">
           <div class="card-body glow-on-card-hover">
             <i class="fa fa-envelope fa-3x"></i>
             <p>{{ 'EmailMe' | translate }}</p>
@@ -24,7 +25,7 @@
     </div>
     <div class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
       <a href={{locationUrl}} target="_blank">
-        <div class="card">
+        <div class="card mx-auto">
           <div class="card-body glow-on-card-hover">
             <i class="fa fa-map-marker fa-3x"></i>
             <p>{{ 'MyLocation' | translate }}</p>
@@ -33,4 +34,22 @@
       </a>
     </div>
   </div>
+</div>
+
+
+<div class="text-center mx-auto">
+  <div class="cat" (click)="playCatVoice()">
+    <div class="ear ear--left"></div>
+    <div class="ear ear--right"></div>
+    <div class="face">
+      <div class="eye eye--left">
+        <div class="eye-pupil"></div>
+      </div>
+      <div class="eye eye--right">
+        <div class="eye-pupil"></div>
+      </div>
+      <div class="muzzle"></div>
+    </div>
+  </div>
+  <h1>{{ 'ClickMe' | translate }}</h1>
 </div>

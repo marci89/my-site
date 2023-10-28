@@ -4,6 +4,8 @@
 
 /*import cat.css*/
 @import './app/css/cat.css';
+/* scrollbar css from css folder*/
+@import './app/css/scrollbar.css';
 
 body {
   background-color: black;

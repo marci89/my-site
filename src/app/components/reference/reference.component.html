@@ -3,19 +3,18 @@
   <p>{{ 'ChooseAReferenceWork' | translate }}</p>
 </div>
 
+
 <div class="conatiner">
-  <div class="row col-10 mt-5 mx-auto">
-    <div *ngFor="let reference of references" class="col-8 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
-
-      <div class="text-center mb-2">
-        <p>{{reference.title}}</p>
-      </div>
-
-      <a href={{reference.url}} target="_blank">
-        <div class="glow-on-card-hover">
-          <img class="reference-card mb-2 mt-2" [src]="reference.image" [alt]="reference.title" />
+  <div class="row col-12 mt-1 mx-auto">
+    <div *ngFor="let reference of references" class="col-12 col-sm-8 col-md-6 col-lg-4 text-center mx-auto mb-3">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <a href={{reference.url}} target="_blank">
+          <img [src]="reference.image" [alt]="reference.title" class="game-image" />
+          <h2>{{reference.title}}</h2>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </div>

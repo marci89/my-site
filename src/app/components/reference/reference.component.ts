@@ -20,6 +20,11 @@ export class ReferenceComponent implements OnInit{
         title: 'English Helper',
         url: 'https://www.kismarczi.hu/english-helper/',
         image: 'assets/images/references/english-helper.png'
+      },
+      {
+        title: 'KJ Brain Developer',
+        url: 'https://www.kismarczi.hu/kj-brain-developer/',
+        image: 'assets/images/references/kj-brain-developer.png'
       }
     ]
   }

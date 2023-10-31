@@ -7,7 +7,21 @@ a {
   color: white;
 }
 
-.reference-card{
+.card {
+  border: 2px solid green;
+}
+
+.card:hover {
+  border: 2px solid rgb(129, 218, 129);
+}
+
+.game-image {
   width: 100%;
-  height: 95%;
+  height: 180px;
+}
+
+@media (max-width: 600px) {
+  .game-image {
+    height: 136px;
+  }
 }
